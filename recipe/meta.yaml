@@ -1,5 +1,5 @@
 {% set name = "RadGEEToolbox" %}
-{% set version = "1.4.4" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 880ef49e211db36f8197cbff9da194fc61f496b5231852322da4394520897e6f
+  sha256: 35b6d4ca67f4187db485a4d7ddf96a6e7a52ddd045ec96d5741bd6130daf980d
 
 build:
   number: 0
@@ -20,6 +20,8 @@ requirements:
     - python >=3.6
   run:
     - earthengine-api
+    - numpy
+    - pandas
     - python >=3.6
 
 test:
