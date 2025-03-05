@@ -7,7 +7,7 @@ Home: https://github.com/radwinskis/RadGEEToolbox
 
 Package license: MIT
 
-Summary: Python package simplifying large-scale operations using Google Earth Engine (GEE) for users who utilize Landsat and Sentinel
+Summary: Streamlined Multispectral & SAR Analysis for Google Earth Engine Python API
 
 Development: https://github.com/radwinskis
 

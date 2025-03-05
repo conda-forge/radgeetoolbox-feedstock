@@ -1,13 +1,13 @@
 {% set name = "RadGEEToolbox" %}
-{% set version = "1.5.0" %}
+{% set version = "1.6.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 35b6d4ca67f4187db485a4d7ddf96a6e7a52ddd045ec96d5741bd6130daf980d
+  url: https://files.pythonhosted.org/packages/c5/5a/dbad373bcd9b08dfedbed170d4109137158269a6c100ab672116921a1143/radgeetoolbox-1.6.0.tar.gz
+  sha256: 9f0e4f172407316c6197186a95fac2c762a57bedd23fcb4467aa76c1a16ba709
 
 build:
   number: 0
@@ -17,12 +17,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.6,<3.12
+    - setuptools
+    - wheel
   run:
     - earthengine-api
     - numpy
     - pandas
-    - python >=3.6
+    - python >=3.6,<3.12
 
 test:
   imports:
@@ -37,7 +39,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: "Python package simplifying large-scale operations using Google Earth Engine (GEE) for users who utilize Landsat and Sentinel"
+  summary: "Streamlined Multispectral & SAR Analysis for Google Earth Engine Python API"
   doc_url: https://radgeetoolbox.readthedocs.io/en/latest/
   dev_url: https://github.com/radwinskis
 
