@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/c5/5a/dbad373bcd9b08dfedbed170d4109137158269a6c100ab672116921a1143/radgeetoolbox-1.6.0.tar.gz
   sha256: 9f0e4f172407316c6197186a95fac2c762a57bedd23fcb4467aa76c1a16ba709
 
 build:
