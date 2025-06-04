@@ -1,13 +1,14 @@
 {% set name = "RadGEEToolbox" %}
-{% set version = "1.6.2" %}
+{% set version = "1.6.3" %}
+{% set python_min = "3.8" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/ff/1b/6fcaef980bdfad0d0285e375ab97bbf7d466f2a20a5844333e1446c36315/radgeetoolbox-1.6.2.tar.gz
-  sha256: cac0a8a616d8fef17625c18667e4a408ae1ec0c0771b5199b681b2dc60c5bb7b
+  url: https://files.pythonhosted.org/packages/09/ee/5a291a8bdb89acf69588680ff2b0c02fd1eff2cc2db6c4992a0d550a2da0/radgeetoolbox-1.6.3.tar.gz
+  sha256: 9e1fc8dcc3ccbbe05546e68040622c0775dd45be59e8a5c06f7f2e2e0a06798c
 
 build:
   number: 0
@@ -17,14 +18,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6,<3.12
+    - python {{ python_min }}
     - setuptools
     - wheel
   run:
     - earthengine-api
     - numpy
     - pandas
-    - python >=3.6,<3.12
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -32,6 +33,7 @@ test:
   commands:
     - pip check
   requires:
+    - python {{ python_min }} 
     - pip
 
 about:
