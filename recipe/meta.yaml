@@ -17,14 +17,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6,<3.13
+    - python {{ python_min }}
     - setuptools
     - wheel
   run:
     - earthengine-api
     - numpy
     - pandas
-    - python >=3.6,<3.13
+    - python >= {{ python_min }}
 
 test:
   imports:
@@ -32,6 +32,7 @@ test:
   commands:
     - pip check
   requires:
+    - python {{ python_min }} 
     - pip
 
 about:
