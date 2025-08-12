@@ -1,5 +1,5 @@
 {% set name = "RadGEEToolbox" %}
-{% set version = "1.6.5" %}
+{% set version = "1.6.6" %}
 {% set python_min = "3.8" %}
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/39/41/47c46e50d934577ec5183dfa962369b7bb00ec0a48c4634678ae7076a05d/radgeetoolbox-1.6.5.tar.gz
-  sha256: f67bf2ed85f4e1f599cad4c754d7d26fe80cb092c04183e53a87aae8572db633
+  url: https://files.pythonhosted.org/packages/18/55/2b1039a1c52a9b1734b375765deb7190a0046fa23d477138af5376807ee2/radgeetoolbox-1.6.6.tar.gz
+  sha256: 9e646a3c905844adb1cfe2d12d1c130be8dc931cd1d7507fabc92eddbdf48e9a
 
 build:
   number: 0
